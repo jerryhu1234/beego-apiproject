@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('run') {
       steps {
-        sh 'echo build successfully!'
+        sh 'docker run --rm $Image.id hostname'
       }
     }
   }
