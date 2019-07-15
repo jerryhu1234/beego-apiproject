@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('build') {
+    stage('run') {
       steps {
-        sh 'docker build -t beego-apiproject ./'
+        sh 'echo build successfully!'
       }
     }
   }
